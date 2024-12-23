@@ -17,6 +17,8 @@
         padding: 20px;
         text-align: center;
         backdrop-filter: blur(10px); /* Para suavizar a imagem de fundo */
+        user-select: none;
+
       }
 
       h1 {
@@ -44,8 +46,8 @@
       }
 
       h3 {
-        font-size: 1.8em;
-        margin-top: 2em;
+        font-size: 1.5em;
+        margin-top: 5em;
         color: #e63946;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
       }
@@ -61,6 +63,12 @@
       .lily-imgs img {
         width: 40px;
         height: 40px;
+        margin: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .three-imgs img {
+        width: 70px;
         margin: 10px;
         transition: transform 0.3s ease;
       }
@@ -112,20 +120,15 @@
         transform: scale(1.05);
       }
 
-      .diferente {
-        color: #000000;
-        text-decoration: underline;
-      }
-
       .song-verse {
-    margin: 2em 0;
-    line-height: 1.2;
+        margin: 2em 0;
+        line-height: 1.2;
 
-    font-size: 1.2em; 
-    font-style: italic;
-    color: #6a4c70;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  }
+        font-size: 1.2em; 
+        font-style: italic;
+        color: #6a4c70;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      }
 
 
 
@@ -136,8 +139,14 @@
   <body>
     <div>
       <h1>Dearest Princess Aisling,</h1>
+      <div class="three-imgs">
+        <img  src="img/three.png" alt="Heart" />
+      </div>
 
       <p>If you <i class="diferente">read between the lines</i>, you’ll notice a little extra something that makes me think of you constantly.</p>
+
+      
+      
 
       <p class="song-verse">
         "It's you, it's you, it's all for you<br>
