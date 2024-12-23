@@ -55,7 +55,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10,
       },
-      "-=1"
+      "+=2.5"
     )
     .from(".three", 0.7, {
       opacity: 0,
@@ -268,11 +268,6 @@ const animationTimeline = () => {
   // tl.seek("currentStep");
   // tl.timeScale(2);
 
-  // Restart Animation on click
-  const replyBtn = document.getElementById("replay");
-  replyBtn.addEventListener("click", () => {
-    tl.restart();
-  });
 };
 
 // Import the data to customize and insert them into page
